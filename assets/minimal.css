@@ -135,6 +135,10 @@ footer a:active, footer a:hover {
   text-indent: -10px;
 }
 
+#content {
+  padding-top: 20px;
+}
+
 #posts {
   list-style: none;
 }
