@@ -1,0 +1,35 @@
+# default config
+title: Dane Harrigan
+url: "https://daneharrigan.com"
+tagline: Loving software while also hating software.
+description: Engineering for HashiCorp, previously Heroku.
+url: http://daneharrigan.com
+email: dane.harrigan@gmail.com
+permalink: /articles/:title
+
+plugins:
+  - jekyll-feed
+  - jekyll-avatar
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# jekyllfeed
+feed:
+  path: atom.xml
+
+# jekyll-seo-tag
+webmaster_verifications:
+  google: 217937520
+
+author:
+  twitter: daneharrigan
+  github: daneharrigan
+  linkedin: dane-harrigan-401077196
+
+social:
+  name: Dane Harrigan
+  links:
+    - https://github.com/daneharrigan
+    - https://instagram.com/daneharrigan
+    - https://twitter.com/daneharrigan
+    - https://www.linkedin.com/in/dane-harrigan-401077196
