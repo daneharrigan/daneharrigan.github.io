@@ -1,5 +1,5 @@
 ---
-layout: info
+layout: default
 title: About
 ---
 
