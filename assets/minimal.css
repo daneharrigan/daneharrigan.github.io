@@ -1,0 +1,164 @@
+body, h1, h2, p, ol, li {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Merriweather','Georgia',serif;
+  font-weight: 400;
+  font-size: 1em;
+  font-kerning: normal;
+
+  word-wrap: break-word;
+
+  color: #41454A;
+  background: #FFF;
+
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+h1, h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1em;
+
+  padding-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+h2 a:link, h2 a:visited {
+  color: #41454A;
+}
+
+p + h2 {
+  padding-top: 20px;
+}
+
+a:link, a:visited, a:active, a:hover {
+  color: #623ce4;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1.7em;
+  padding-bottom: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #DEE0E3;
+}
+
+time {
+  font-size: 1em;
+  color: rgb(194, 198, 203);
+  margin-bottom: 10px;
+  display: block;
+}
+
+header, footer {
+  position: relative;
+}
+
+header nav {
+  position: absolute;
+  right: 0;
+  margin: 25px 0;
+}
+
+header {
+  padding-bottom: 0px;
+}
+
+footer {
+  padding: 10px 0 20px 0;
+}
+
+footer nav {
+  float: right;
+}
+
+header li, footer li {
+  display: inline;
+  margin-left: 10px;
+}
+
+footer #copyright {
+  color: rgb(194, 198, 203);
+  font-size: 0.7em;
+  float: left;
+}
+
+footer a:active, footer a:hover {
+  text-decoration: none;
+}
+
+/* photo at the top of the page  */
+#me {
+  border: 1px solid #5F4B8B;
+  border: 1px solid #623ce4;
+  border-radius: 40px;
+
+  height: 80px;
+  width: 80px;
+  display: block;
+
+  overflow: hidden;
+  background: #FFF;
+  margin: 0 auto;
+}
+
+#me a:link, #me a:visited {
+  border: 1px solid #FFF;
+  border-radius: 40px;
+
+  height: 78px;
+  width: 78px;
+  display: block;
+
+  overflow: hidden;
+  text-indent: -10px;
+}
+
+#posts {
+  list-style: none;
+}
+
+#posts > li {
+  padding-bottom: 30px;
+}
+
+/*
+
+
+
+
+code {
+  font-family: "Source Code Pro";
+  background: rgb(246, 248, 250);
+  -webkit-font-smoothing: auto;
+}
+
+code pre {
+  padding: 15px;
+  margin: 0;
+  border-radius: 4px;
+  font-family: inherit;
+  background: inherit;
+}
+*/

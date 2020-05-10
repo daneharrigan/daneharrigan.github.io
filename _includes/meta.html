@@ -1,0 +1,17 @@
+<head>
+  <title>{{ page.title}} | {{ site.title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href="/assets/minimal.css" rel="stylesheet">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3182414-19"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'UA-3182414-19');
+  </script>
+  {% feed_meta %}
+<head>
