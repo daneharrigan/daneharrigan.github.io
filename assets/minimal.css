@@ -1,4 +1,4 @@
-body, h1, h2, p, ol, li {
+body, h1, h2, p, ol, li, pre {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -86,7 +86,7 @@ header {
 }
 
 footer {
-  padding: 10px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 
 footer nav {
@@ -143,22 +143,18 @@ footer a:active, footer a:hover {
   padding-bottom: 30px;
 }
 
-/*
-
-
-
+/* blocks of code */
 
 code {
   font-family: "Source Code Pro";
   background: rgb(246, 248, 250);
   -webkit-font-smoothing: auto;
+  padding: 0px 4px
 }
 
-code pre {
+pre code {
+  display: block;
   padding: 15px;
-  margin: 0;
   border-radius: 4px;
-  font-family: inherit;
-  background: inherit;
+  margin-bottom: 20px;
 }
-*/
