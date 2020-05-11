@@ -1,4 +1,5 @@
-body, h1, h2, p, ol, li, pre {
+/* global elements */
+body, h1, h2, time, p, nav, ul, ol, li, pre, blockquote {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -7,7 +8,7 @@ body, h1, h2, p, ol, li, pre {
 body {
   font-family: 'Merriweather','Georgia',serif;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 16px;
   font-kerning: normal;
 
   word-wrap: break-word;
@@ -25,26 +26,6 @@ h1, h2 {
   font-weight: bold;
 }
 
-h1 {
-  font-size: 2em;
-  line-height: 1em;
-
-  padding-bottom: 30px;
-}
-
-h2 {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-h2 a:link, h2 a:visited {
-  color: #41454A;
-}
-
-p + h2 {
-  padding-top: 20px;
-}
-
 a:link, a:visited, a:active, a:hover {
   color: #623ce4;
   text-decoration: none;
@@ -54,33 +35,26 @@ a:active, a:hover {
   text-decoration: underline;
 }
 
-p {
-  line-height: 1.7em;
-  padding-bottom: 20px;
+nav li {
+  display: inline;
+  padding-left: 10px;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid #DEE0E3;
+ol, ul {
+  padding-left: 20px;
 }
 
-time {
-  font-size: 1em;
-  color: rgb(194, 198, 203);
-  margin-bottom: 10px;
-  display: block;
+blockquote {
+  border-left: 4px solid rgb(246, 248, 250);
+  border-left: 4px solid #DEE0E3;
+  padding: 0 20px;
+  font-style: italic;
 }
 
-header, footer {
-  position: relative;
-}
-
-header nav {
-  float: right;
-}
+/* header elements */
 
 header {
-  padding-bottom: 0px;
+  position: relative;
 }
 
 header h1 a:link, header h1 a:visited {
@@ -88,30 +62,32 @@ header h1 a:link, header h1 a:visited {
   color: #41454A;
 }
 
+header nav {
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
 footer {
-  padding: 20px 0 20px 0;
+  border-top: 1px solid #DEE0E3;
+  padding: 20px 10px;
+}
+
+/* footer elements */
+footer a:active, footer a:hover {
+  text-decoration: none;
 }
 
 footer nav {
   float: right;
 }
 
-header li, footer li {
-  display: inline;
-  margin-left: 10px;
-}
-
-footer #copyright {
+#copyright {
   color: rgb(194, 198, 203);
   font-size: 0.7em;
   float: left;
 }
 
-footer a:active, footer a:hover {
-  text-decoration: none;
-}
-
-/* photo at the top of the page  */
 #me {
   border: 1px solid #5F4B8B;
   border: 1px solid #623ce4;
@@ -120,10 +96,10 @@ footer a:active, footer a:hover {
   height: 80px;
   width: 80px;
   display: block;
+  margin: 30px auto; /* 25px;*/
 
   overflow: hidden;
   background: #FFF;
-  margin: 0 auto 25px;
 }
 
 #me a:link, #me a:visited {
@@ -138,25 +114,70 @@ footer a:active, footer a:hover {
   text-indent: -10px;
 }
 
+/* content elements */
 #content {
-  padding-top: 20px;
-  clear: both;
+  margin-top: 30px;
+  line-height: 1.7em;
 }
 
-#posts {
+#content h1 {
+  font-size: 2em;
+}
+
+#content h2 {
+  font-size: 1.4em;
+  margin-top: 30px;
+}
+
+#content h2 a:link, #content h2 a:visited {
+  color: #41454A;
+}
+
+#content time {
+  font-size: 1em;
+  color: rgb(194, 198, 203);
+  display: block;
+}
+
+#content p, #content div.highlight, #content ul, #content ol {
+  margin-top: 20px;
+}
+
+#content .cite {
+  font-size: 0.8em;
+  font-style: italic;
+  line-height: 1.2em;
+  text-align: right;
+  color: rgb(194, 198, 203);
+  position: relative;
+}
+
+#content .cite img {
+  margin-bottom: 5px;
+  height: auto;
+  width: 100%;
+}
+
+/* list of articles */
+ol#posts {
+  padding-left: 0;
+  margin-top: 0;
   list-style: none;
 }
 
-#posts > li {
-  padding-bottom: 30px;
+#posts h2 {
+  margin-top: 0;
 }
 
-#posts > li:last-child {
-  padding-bottom: 0;
+#posts li {
+  margin-top: 40px;
 }
 
-/* blocks of code */
+#posts li:first-child {
+  margin-top: 0;
+}
 
+/* code, both inline and blocks */
 code {
   font-family: "Source Code Pro";
   background: rgb(246, 248, 250);
@@ -164,9 +185,14 @@ code {
   padding: 0px 4px
 }
 
+p code {
+  border: 1px solid rgba(0, 0, 0, 0.02); 
+}
+
 pre code {
   display: block;
   padding: 15px;
   border-radius: 4px;
   margin-bottom: 20px;
+  line-height: 1.3em;
 }
