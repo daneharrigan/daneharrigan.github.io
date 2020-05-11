@@ -18,9 +18,6 @@ feed:
   path: atom.xml
 
 # jekyll-seo-tag
-webmaster_verifications:
-  google: 217937520
-
 author:
   twitter: daneharrigan
   github: daneharrigan
