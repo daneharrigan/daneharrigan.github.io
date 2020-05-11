@@ -37,7 +37,7 @@ a:active, a:hover {
 
 nav li {
   display: inline;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
 ol, ul {

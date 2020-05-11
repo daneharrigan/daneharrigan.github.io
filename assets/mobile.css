@@ -11,13 +11,17 @@
   }
 
   header li {
-    padding-left: 0;
+    margin-left: 0;
   }
 
   header li a:link, header li a:visited {
     padding: 20px;
     display: inline-block;
 
+  }
+
+  footer li {
+    margin-left: 30px;
   }
 
   pre code {
