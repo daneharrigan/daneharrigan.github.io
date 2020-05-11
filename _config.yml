@@ -1,9 +1,8 @@
 # default config
 title: Dane Harrigan
-url: "https://daneharrigan.com"
+url: https://daneharrigan.com
 tagline: Loving software while also hating software.
 description: Engineering for HashiCorp, previously Heroku.
-url: http://daneharrigan.com
 email: dane.harrigan@gmail.com
 permalink: /articles/:title
 
