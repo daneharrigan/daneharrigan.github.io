@@ -14,6 +14,11 @@ I teeter between video games and side projects. Writing code is my passion, but
 when I want to mull over an idea, video games. These days it's [Destiny][3] on
 PC and I was lucky enough to get [a private studio tour][4] back in 2017.
 
+## Reading
+
+At the moment, I'm reading a few comic series. House of X and Powers of X by
+Hickman are fantastic and on the DC side, I love The Flash series.
+
 [1]: https://hashicorp.com
 [2]: https://heroku.com
 [3]: https://www.bungie.net/7/en/Destiny/Shadowkeep
