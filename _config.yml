@@ -6,6 +6,10 @@ description: Engineering for HashiCorp, previously Heroku.
 email: dane.harrigan@gmail.com
 permalink: /articles/:title
 
+exclude:
+  - contributions.md
+  - _drafts
+
 plugins:
   - jekyll-feed
   - jekyll-avatar
